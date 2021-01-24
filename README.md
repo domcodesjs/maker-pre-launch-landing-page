@@ -1,14 +1,8 @@
-# Frontend Mentor - Maker pre-launch landing page
+# Maker pre-launch landing page
 
 [Live Site](https://maker-five.vercel.app)
 
 ![Design preview for the Maker pre-launch landing page coding challenge](./preview.jpg)
-
-## Welcome! 👋
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow. These premium challenges are perfect portfolio pieces, so please do feel free to use what you build in your portfolio to show others.
-
-**To do this challenge, you need a basic understanding of HTML, CSS, and JavaScript.**
 
 ## The challenge
 
