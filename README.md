@@ -1,6 +1,6 @@
 # Maker pre-launch landing page
 
-[Live Site](https://maker-five.vercel.app)
+[Live Site](https://maker.domcodesjs.vercel.app)
 
 ![Design preview for the Maker pre-launch landing page coding challenge](./preview.jpg)
 
