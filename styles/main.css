@@ -34,9 +34,392 @@ body {
   color: var(--color-white);
 }
 
+/* resets */
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* end resets */
+
+/* helpers */
+.fill-turquoise {
+  fill: var(--color-turquoise);
+}
+
+.fill-blue {
+  fill: var(--color-blue);
+}
+/* end helpers */
+
 /* header */
 .header {
   display: flex;
   justify-content: center;
   margin: 4rem 0 5.6rem 0;
 }
+
+@media only screen and (min-width: 768px) {
+  .header {
+    justify-content: start;
+    padding: 0 4rem;
+    margin: 4.8rem 0 7.8rem 0;
+  }
+}
+/* end header */
+
+/* hero  */
+.hero__img__mobile {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero__img__mobile img {
+  width: 110%;
+}
+
+.hero__img-left {
+  display: none;
+}
+.hero__img-right {
+  display: none;
+}
+
+.hero__content {
+}
+
+.hero__title {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 4.8rem 0 2.4rem 0;
+  padding: 0 2.4rem;
+}
+
+.hero__title span {
+  color: var(--color-turquoise);
+}
+
+.hero__text {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-gray);
+  font-weight: var(--weight-light);
+  line-height: 1.5;
+  padding: 0 2.4rem;
+}
+
+.hero__scroll-img {
+  display: block;
+  margin: 3.2rem auto 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero__img__mobile {
+    display: none;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero__img-left {
+    display: block;
+    position: absolute;
+    left: -15rem;
+    height: 100%;
+  }
+
+  .hero__img-right {
+    display: block;
+    position: absolute;
+    right: -15rem;
+    height: 100%;
+  }
+
+  .hero__content {
+    background: url(../assets/bg-hero-squiggle.svg);
+    background-size: 100% 100%;
+    width: 47rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero__title {
+  }
+
+  .hero__text {
+    width: 47rem;
+    margin: 2.4rem auto 0 auto;
+  }
+}
+/* end hero */
+
+/* features */
+.features {
+  margin-top: 14.4rem;
+  padding: 0 2.4rem;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__item:not(:first-child) {
+  margin-top: 5.6rem;
+}
+
+.features__img {
+  background: var(--color-blue);
+  width: 12rem;
+  border-radius: 4.5rem;
+  padding: 2.4rem;
+  height: 12.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__img img {
+  width: 100%;
+}
+
+.features__item__title {
+  margin-top: 3.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: var(--weight-extra-bold);
+}
+
+.features__item__text {
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  font-weight: var(--weight-light);
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .features {
+    width: 57rem;
+    margin: 10rem auto 0 auto;
+    padding: 0;
+  }
+
+  .features__item {
+    flex-direction: row;
+  }
+
+  .features__item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  .features__item__content {
+    width: 34rem;
+    margin-left: 5.6rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  }
+
+  .features__item__title {
+    text-align: left;
+    margin: 0;
+  }
+
+  .features__item__text {
+    margin-top: 1rem;
+    text-align: left;
+  }
+}
+/* end features */
+
+/* pricing */
+.plans {
+  margin-top: 14.4rem;
+  padding: 0 2.4rem;
+}
+
+.plans__title {
+  font-size: 2.4rem;
+  font-weight: var(--weight-extra-bold);
+  text-align: center;
+}
+
+.plans__text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-gray);
+  font-weight: var(--weight-light);
+  margin-top: 2.7rem;
+}
+
+.plans__option {
+  padding: 4.8rem 3rem 3.2rem 3rem;
+  border-radius: 0.8rem;
+  background: var(--color-blue);
+  margin-top: 5.6rem;
+}
+
+.plans__option:last-child {
+  margin-top: 3.2rem;
+}
+
+.plans__option:last-child {
+  background: var(--color-turquoise);
+  color: var(--color-black);
+}
+
+.plans__option__title {
+  font-size: 1.8rem;
+  font-weight: var(--weight-extra-bold);
+}
+
+.plans__option__text {
+  margin-top: 1.9rem;
+  line-height: 1.5;
+  color: var(--color-gray);
+  font-weight: var(--weight-extra-light);
+}
+
+.plans__price {
+  font-size: 4rem;
+  margin: 2.4rem 0;
+  display: flex;
+  align-items: center;
+  font-weight: var(--weight-extra-bold);
+}
+
+.plans__price span {
+  font-size: 1.5rem;
+  margin-left: 0.8rem;
+  font-weight: var(--weight-extra-light);
+}
+
+.plans__option__features li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.plans__option__features li:not(:first-child) {
+  margin-top: 1.2rem;
+}
+
+.plans__option__features li svg {
+  margin-right: 1.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .plans {
+    width: 57rem;
+    margin: 14rem auto 0 auto;
+    padding: 0;
+  }
+
+  .plans__option {
+    width: 44rem;
+    margin: 5.6rem auto 0 auto;
+    padding-bottom: 6rem;
+  }
+
+  .plans__option:last-child {
+    margin-top: 6.6rem;
+  }
+}
+
+/* end pricing */
+
+/* notify */
+.notify {
+  margin: 14.4rem 0 16.4rem 0;
+}
+
+.notify__title {
+  background-image: url(/assets/bg-footer-squiggle.svg);
+  background-size: 100% 100%;
+}
+
+.notify__title h1 {
+  font-size: 2.4rem;
+  font-weight: var(--weight-extra-bold);
+  text-align: center;
+  padding: 0 2.4rem;
+}
+
+.notify__form {
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.notify__form input {
+  height: 4.8rem;
+  border: none;
+  border-radius: 20rem;
+  background: var(--color-blue);
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  font-weight: var(--weight-extra-bold);
+  padding-left: 1.6rem;
+  outline: none;
+}
+
+.notify__form button {
+  margin-top: 2.4rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 20rem;
+  background: turquoise;
+  color: var(--color-blue);
+  font-weight: var(--weight-extra-bold);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .notify {
+    margin: 14rem auto 12rem auto;
+    /* width: 47rem; */
+    padding: 1.6rem 0 2.4rem 0;
+    background-image: url(/assets/bg-footer-squiggle.svg);
+    background-size: 100% 100%;
+  }
+
+  .notify__title {
+    background: none;
+  }
+
+  .notify__form {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 47rem;
+    margin: 3rem auto 0 auto;
+  }
+
+  .notify__form input {
+    width: 32rem;
+  }
+
+  .notify__form button {
+    margin: 0;
+    width: 14rem;
+  }
+}
+/* end notify */
