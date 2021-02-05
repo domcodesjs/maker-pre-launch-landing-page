@@ -286,15 +286,17 @@ ul {
 
 @media (min-width: 992px) {
   .features {
-    margin-top: 20rem;
     padding: 0;
-    width: 100%;
+    width: 80rem;
+    margin: 20rem auto 0 auto;
+    display: none;
   }
 
   .features__items {
-    grid-gap: 3rem;
-    grid-template-columns: repeat(4, 1fr);
-    width: fit-content;
+    /* grid-gap: 3rem; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .features__item {
@@ -507,7 +509,6 @@ ul {
 @media only screen and (min-width: 768px) {
   .notify {
     margin: 14rem auto 12rem auto;
-    /* width: 47rem; */
     padding: 1.6rem 0 2.4rem 0;
     background-image: url(/assets/bg-footer-squiggle.svg);
     background-size: 100% 100%;
