@@ -256,6 +256,7 @@ ul {
 
   .features__items {
     margin: 0 auto;
+    width: 100%;
     width: 57rem;
     grid-gap: 4rem;
   }
@@ -287,14 +288,11 @@ ul {
 @media (min-width: 992px) {
   .features {
     padding: 0;
-    width: 80rem;
     margin: 20rem auto 0 auto;
-    display: none;
   }
 
   .features__items {
-    /* grid-gap: 3rem; */
-    display: flex;
+    grid-template-columns: repeat(4, minmax(0, 25.5rem));
     justify-content: center;
     width: 100%;
   }
